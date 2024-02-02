@@ -1,0 +1,10 @@
+1. Provide a list of 5 platforms with the least number of projects available.
+```SQL
+SELECT platform, count(name) as `Number of Projects`
+FROM `bigquery-public-data.libraries_io.projects` 
+Group by 1 
+Order by 2 ASC
+LIMIT 5
+```
+
+
